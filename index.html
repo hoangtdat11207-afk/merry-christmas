@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gửi gắm những lời chúc Giáng sinh an lành và dễ thương nhất đến bạn bè và người thân.">
+    <title>Giáng Sinh An Lành & Hạnh Phúc</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        xmasRed: '#C92A2A',       
+                        xmasDarkRed: '#9B1C1C',   
+                        xmasGreen: '#2F855A',     
+                        xmasDarkGreen: '#22543D', 
+                        xmasGold: '#D69E2E',      
+                        xmasCream: '#FFF5F5',     
+                        xmasText: '#2D3748'
+                    },
+                    fontFamily: {
+                        cute: ['Quicksand', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background-color: #FFF5F5;
+
+            background-image: 
+                linear-gradient(rgba(201, 42, 42, 0.05) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(201, 42, 42, 0.05) 1px, transparent 1px);
+            background-size: 30px 30px;
+            overflow-x: hidden;
+        }
+
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+        }
+
+        .snowflake {
+            position: fixed;
+            top: -10px;
+            color: #87CEEB; 
+            text-shadow: 0 0 3px rgba(135, 206, 235, 0.4); 
+            font-size: 1em;
+            opacity: 0.8;
+            pointer-events: none;
+            animation: fall linear forwards;
+            z-index: 50;
+        }
+
+        @keyframes fall {
+            to {
+                transform: translateY(100vh) rotate(360deg);
+            }
+        }
+        .fade-in-up {
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .sticker {
+            position: absolute;
+            z-index: 0;
+            filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.15));
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+        .sticker i {
+            paint-order: stroke fill;
+            display: inline-block;
+        }
+        
+        .sticker:hover {
+            transform: scale(1.1) rotate(10deg) !important;
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #c1c1c1; 
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #a8a8a8; 
+        }
+    </style>
+</head>
+<body class="text-xmasText flex flex-col min-h-screen relative overflow-x-hidden">
+    <div class="sticker hidden lg:block" style="top: 100px; left: 5%; transform: rotate(-15deg);">
+        <div class="relative">
+            <i class="fa-solid fa-santa-hat text-8xl text-xmasRed" style="-webkit-text-stroke: 8px white;"></i>
+        </div>
+    </div>
+
+    <div class="sticker hidden md:block" style="top: 250px; right: 8%; transform: rotate(15deg);">
+         <i class="fa-solid fa-sleigh text-6xl text-xmasDarkGreen" style="-webkit-text-stroke: 6px white;"></i>
+    </div>
+
+    <div class="sticker" style="bottom: 120px; left: 20px; transform: rotate(-10deg);">
+        <i class="fa-solid fa-snowman text-7xl text-blue-300" style="-webkit-text-stroke: 6px white;"></i>
+    </div>
+
+    <div class="sticker" style="bottom: 150px; right: 20px; transform: rotate(20deg);">
+        <i class="fa-solid fa-candy-cane text-7xl text-xmasRed" style="-webkit-text-stroke: 6px white;"></i>
+    </div>
+
+    <div class="sticker" style="top: 150px; right: 20%; transform: rotate(45deg);">
+        <i class="fa-solid fa-bell text-4xl text-xmasGold" style="-webkit-text-stroke: 4px white;"></i>
+    </div>
+    <div class="sticker hidden sm:block" style="top: 450px; left: 15%; transform: rotate(-25deg);">
+        <i class="fa-solid fa-socks text-5xl text-red-500" style="-webkit-text-stroke: 5px white;"></i>
+    </div>
+
+    <div class="sticker hidden sm:block" style="top: 480px; right: 15%; transform: rotate(25deg);">
+        <i class="fa-solid fa-cookie-bite text-5xl text-yellow-700" style="-webkit-text-stroke: 5px white;"></i>
+    </div>
+
+    <div class="sticker" style="top: 380px; left: 25%; transform: rotate(-10deg);">
+        <i class="fa-solid fa-gift text-4xl text-green-600" style="-webkit-text-stroke: 4px white;"></i>
+    </div>
+
+    <div class="sticker" style="top: 360px; right: 28%; transform: rotate(10deg);">
+        <i class="fa-regular fa-snowflake text-4xl text-blue-200" style="-webkit-text-stroke: 3px white;"></i>
+    </div>
+
+    <div class="sticker hidden lg:block" style="top: 550px; right: 25%; transform: rotate(-5deg);">
+        <i class="fa-solid fa-tree text-5xl text-green-700" style="-webkit-text-stroke: 5px white;"></i>
+    </div>
+
+    <div class="sticker hidden lg:block" style="top: 580px; left: 22%; transform: rotate(15deg);">
+        <i class="fa-solid fa-mitten text-5xl text-red-400" style="-webkit-text-stroke: 5px white;"></i>
+    </div>
+
+    <div class="sticker" style="top: 80px; left: 40%; transform: rotate(0deg); opacity: 0.6">
+        <i class="fa-solid fa-star text-2xl text-yellow-400"></i>
+    </div>
+    <div class="sticker" style="top: 120px; right: 35%; transform: rotate(45deg); opacity: 0.6">
+        <i class="fa-solid fa-star text-3xl text-yellow-400"></i>
+    </div>
+    <div class="sticker" style="bottom: 300px; left: 8%; transform: rotate(-45deg);">
+        <i class="fa-solid fa-holly-berry text-4xl text-green-600" style="-webkit-text-stroke: 3px white;"></i>
+    </div>
+
+    <header class="bg-white/90 backdrop-blur-sm shadow-sm sticky top-0 z-40 border-b border-red-100">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <i class="fa-solid fa-tree text-xmasGreen text-2xl"></i>
+                <h1 class="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-xmasRed to-xmasDarkRed tracking-wide">NoelYeuThuong</h1>
+            </div>
+
+            <nav class="hidden md:block">
+                <ul class="flex gap-6 text-sm font-bold text-gray-600">
+                    <li><a href="#loi-chuc" class="hover:text-xmasRed transition">Gửi Lời Chúc</a></li>
+                    <li><a href="#hoat-dong" class="hover:text-xmasGreen transition">Hoạt Động</a></li>
+                </ul>
+            </nav>
+            <button class="md:hidden text-xmasRed text-xl">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main class="flex-grow relative z-10">
+
+        <section class="py-12 md:py-20 text-center px-4">
+            <div class="max-w-2xl mx-auto">
+                <div class="inline-block p-4 rounded-full bg-red-100 mb-6 animate-bounce shadow-inner border-4 border-white">
+                    <i class="fa-solid fa-holly-berry text-xmasRed text-3xl"></i>
+                </div>
+                <h2 class="text-4xl md:text-6xl font-bold text-xmasDarkGreen mb-4 drop-shadow-sm">Giáng Sinh Diệu Kỳ</h2>
+                <p class="text-gray-600 text-lg mb-8 italic">"Trao nhau hơi ấm, nhận lại nụ cười."</p>
+            </div>
+        </section>
+
+        <section id="loi-chuc" class="py-10 px-4 relative">
+
+            
+            <div class="max-w-md mx-auto bg-white rounded-2xl shadow-2xl p-8 border-4 border-double border-xmasRed relative overflow-hidden z-20">
+                <div class="absolute -top-10 -right-10 w-24 h-24 bg-xmasDarkGreen transform rotate-45 shadow-lg z-0"></div>
+                <div class="absolute -bottom-10 -left-10 w-24 h-24 bg-xmasRed transform rotate-45 shadow-lg z-0"></div>
+
+                <div id="inputForm" class="text-center transition-all duration-500 relative z-10">
+                    <h3 class="text-2xl font-bold text-xmasDarkRed mb-6">Tên bạn là gì nhỉ?</h3>
+                    <div class="space-y-4">
+                        <input type="text" id="userName" placeholder="Nhập tên xinh xắn của bạn..." 
+                            class="w-full px-4 py-4 rounded-full border-2 border-red-100 focus:outline-none focus:border-xmasRed focus:ring-4 focus:ring-red-100 transition text-center font-semibold text-lg shadow-inner bg-red-50">
+                        <button onclick="generateWish()" 
+                            class="w-full bg-gradient-to-r from-xmasRed to-xmasDarkRed hover:from-red-600 hover:to-red-800 text-white font-bold py-4 px-6 rounded-full shadow-lg hover:shadow-xl transition transform hover:-translate-y-1 active:scale-95 flex items-center justify-center gap-2 text-lg">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                            Nhận Phép Màu
+                        </button>
+                    </div>
+                </div>
+
+                <div id="wishResult" class="hidden text-center fade-in-up relative z-10">
+                    <div class="mb-6 relative inline-block">
+                        <i class="fa-solid fa-gift text-6xl text-xmasRed animate-bounce"></i>
+                        <i class="fa-solid fa-star text-xl text-yellow-400 absolute -top-2 -right-4 animate-pulse"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-xmasDarkGreen mb-4">Gửi <span id="displayName" class="text-xmasRed underline decoration-wavy decoration-xmasGold"></span> thân thương!</h3>
+                    <div class="bg-red-50 p-6 rounded-xl border border-red-100 shadow-inner">
+                        <p id="wishContent" class="text-gray-800 text-lg leading-relaxed font-medium italic"></p>
+                    </div>
+                    <div class="mt-8">
+                        <button onclick="resetForm()" class="text-sm text-gray-400 hover:text-xmasRed hover:underline transition">
+                            <i class="fa-solid fa-rotate-right mr-1"></i> Nhập tên khác
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="hoat-dong" class="container mx-auto px-4 py-16 relative">
+            <div class="text-center mb-12">
+                <span class="text-xmasRed font-bold tracking-[0.2em] uppercase text-xs bg-red-100 px-3 py-1 rounded-full">Không khí lễ hội</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-xmasDarkGreen mt-3">Góc Giáng Sinh</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative z-10">
+
+                <article class="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border-b-4 border-xmasGreen text-center group transform hover:-rotate-1">
+                    <div class="w-20 h-20 bg-green-50 rounded-full flex items-center justify-center mx-auto mb-6 text-xmasGreen text-3xl group-hover:bg-xmasGreen group-hover:text-white transition-colors duration-300">
+                        <i class="fa-solid fa-mug-hot"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-3 text-gray-800">Ấm Áp</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">
+                        Một tách cacao nóng, một chiếc chăn bông và những câu chuyện không hồi kết bên lò sưởi.
+                    </p>
+                </article>
+
+                <article class="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border-b-4 border-xmasRed text-center group transform hover:rotate-1">
+                    <div class="w-20 h-20 bg-red-50 rounded-full flex items-center justify-center mx-auto mb-6 text-xmasRed text-3xl group-hover:bg-xmasRed group-hover:text-white transition-colors duration-300">
+                        <i class="fa-solid fa-gifts"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-3 text-gray-800">Yêu Thương</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">
+                        Trao đi những món quà nhỏ bé nhưng chứa đựng cả bầu trời chân thành và hy vọng.
+                    </p>
+                </article>
+
+                <article class="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border-b-4 border-xmasGold text-center group transform hover:-rotate-1">
+                    <div class="w-20 h-20 bg-yellow-50 rounded-full flex items-center justify-center mx-auto mb-6 text-xmasGold text-3xl group-hover:bg-xmasGold group-hover:text-white transition-colors duration-300">
+                        <i class="fa-solid fa-church"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-3 text-gray-800">An Lành</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">
+                        Nguyện cầu cho sự bình an sẽ luôn hiện hữu trong trái tim bạn và gia đình.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+    </main>
+    <footer class="bg-white border-t border-gray-100 mt-auto relative z-20">
+        <div class="container mx-auto px-4 py-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                <div class="text-center md:text-left w-full md:w-auto">
+                    <p class="font-bold text-xmasDarkGreen text-xl mb-1">Giáng Sinh An Lành</p>
+                    <p class="text-sm text-gray-500">© 2025 Design with <i class="fa-solid fa-heart text-xmasRed text-xs animate-pulse"></i> by Hoàng Tiến Đạt.</p>
+                </div>
+                
+                <div class="hidden md:block text-right">
+                   <div class="flex gap-2 text-xmasGold text-xl">
+                       <i class="fa-solid fa-star animate-pulse" style="animation-delay: 0s"></i>
+                       <i class="fa-solid fa-star animate-pulse" style="animation-delay: 0.3s"></i>
+                       <i class="fa-solid fa-star animate-pulse" style="animation-delay: 0.6s"></i>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const wishes = [
+            "chúc bạn có một mùa Giáng sinh ấm áp trọn vẹn. Mong rằng mọi điều ước trong đêm nay của bạn sẽ sớm nở hoa thành hiện thực!",
+            "mong bình an sẽ nhẹ nhàng gõ cửa nhà bạn, niềm vui sẽ lấp đầy trái tim và tình yêu sẽ sưởi ấm tâm hồn bạn suốt cả năm dài.",
+            "cầu chúc cho bạn một mùa lễ hội lung linh sắc màu, rộn rã tiếng cười và ngập tràn những khoảnh khắc diệu kỳ bên người thương.",
+            "hy vọng ánh sáng ấm áp của đêm Giáng sinh sẽ dẫn lối cho bạn đến với thành công rực rỡ và hạnh phúc viên mãn trong năm mới.",
+            "gửi đến bạn ngàn nụ hôn của tuyết, trăm cái ôm của gió và vạn lời chúc tốt đẹp nhất. Bạn xứng đáng với mọi điều tuyệt vời!",
+            "chúc bạn luôn giữ được nụ cười rạng rỡ như ánh sao trên đỉnh cây thông, và một trái tim ấm áp để lan tỏa yêu thương đến mọi người.",
+            "mong bạn gói ghém hết muộn phiền của năm cũ để lại phía sau, chỉ mang theo niềm vui và hy vọng bước vào một mùa Giáng sinh an lành."
+        ];
+
+        function generateWish() {
+            const nameInput = document.getElementById('userName');
+            const formDiv = document.getElementById('inputForm');
+            const resultDiv = document.getElementById('wishResult');
+            const displayName = document.getElementById('displayName');
+            const wishContent = document.getElementById('wishContent');
+
+            const name = nameInput.value.trim();
+
+            if (name === "") {
+                alert("Bạn ơi, nhập tên để mình chúc nhé!");
+                nameInput.focus();
+                return;
+            }
+            const randomWish = wishes[Math.floor(Math.random() * wishes.length)];
+            displayName.innerText = name;
+            wishContent.innerText = `Mùa Giáng sinh này, ${randomWish}`;
+
+            formDiv.classList.add('hidden');
+            resultDiv.classList.remove('hidden');
+
+            createSnowStorm();
+        }
+
+        function resetForm() {
+            const formDiv = document.getElementById('inputForm');
+            const resultDiv = document.getElementById('wishResult');
+            const nameInput = document.getElementById('userName');
+
+            resultDiv.classList.add('hidden');
+            formDiv.classList.remove('hidden');
+            nameInput.value = "";
+            nameInput.focus();
+        }
+
+        function createSnowflake() {
+            const snow = document.createElement('div');
+            snow.classList.add('snowflake');
+            snow.innerHTML = '❄';
+     
+            snow.style.left = Math.random() * 100 + 'vw';
+        
+            const size = Math.random() * 15 + 15 + 'px'; 
+            snow.style.fontSize = size;
+            
+            snow.style.opacity = Math.random() * 0.5 + 0.3; 
+
+            snow.style.animationDuration = Math.random() * 5 + 3 + 's';
+
+            document.body.appendChild(snow);
+
+            setTimeout(() => {
+                snow.remove();
+            }, 8000);
+        }
+
+        setInterval(createSnowflake, 200);
+
+        function createSnowStorm() {
+
+            for(let i = 0; i < 20; i++) {
+                setTimeout(createSnowflake, i * 100);
+            }
+        }
+    </script>
+</body>
+</html>
